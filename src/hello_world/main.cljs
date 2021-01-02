@@ -1,5 +1,6 @@
 (ns ^:figwheel-hooks hello-world.main
-  (:require [hello-world.core :as app]
+  (:require [hello-world.core]
+            [hello-world.views :as views]
             [re-frame.core :as rf]
             [reagent.dom :as rdom]))
 
@@ -7,7 +8,7 @@
 
 (defn ^:after-load run []
   (when-let [el (js/document.getElementById "app")]
-    (rdom/render [app/hello-world] el)))
+    (rdom/render [views/hello-world] el)))
 
 (defn ^:export main
   []
