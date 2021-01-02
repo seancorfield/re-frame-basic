@@ -1,8 +1,9 @@
-(ns hello-world.core-test
+(ns hello-world.views-test
     (:require
      #?(:clj  [clojure.test :refer [deftest is testing]]
         :cljs [cljs.test :refer-macros [deftest is testing]])
-     [hello-world.core :as sut]
+     [hello-world.core]
+     [hello-world.views :as sut]
      [re-frame.core :as rf]))
 
 (deftest hello-works-test
