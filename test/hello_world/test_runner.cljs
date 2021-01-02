@@ -5,5 +5,5 @@
     [hello-world.views-test]
     [figwheel.main.testing :refer [run-tests-async]]))
 
-(defn -main [& args]
+(defn -main [& _]
   (run-tests-async 5000))
